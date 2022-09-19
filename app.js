@@ -119,8 +119,10 @@ function displayFriends() {
             // 1. No mushrooms, set a message to go hunt for more
             if (mushrooms = [null]) {
                 message = `You need more mushrooms to feed your hungry friends!`
-            } else {
-                
+            } else if (friend.satisfied = 3) {
+                message = `${friend.name} is full and happy, send them on their way.`
+            } else {}
+
             }
             // 2. Friend is already fully satisfied (3), set a message to pick another friend
             // 3. Feed friend mushroom:
