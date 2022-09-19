@@ -123,21 +123,12 @@ function displayFriends() {
             if (mushrooms.length === 0) {
                 message = `You need more mushrooms to feed your hungry friends!`;
                 
-                
-                // displayMessage();
-                // displayMushrooms();
-                // displayFriends();
-                
-                
+
             } else if (friend.satisfied === 3) {
                 message = `${friend.name} is full and happy, send them on their way.`;
                 
                 
-                // displayMessage();
-                // displayMushrooms();
-                // displayFriends();
-                
-                
+
             } else {
                 let treat = mushrooms.pop();
                 friend.satisfied++;
@@ -147,9 +138,7 @@ function displayFriends() {
                 //         friend.emoji
                 //     }
                 message = `${friend.name} had a tasty ${treat.type}!`;
-                // displayMessage();
-                // displayMushrooms();
-                // displayFriends();
+
                 
             }
             
