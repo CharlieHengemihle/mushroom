@@ -47,6 +47,7 @@ huntMushroomsButton.addEventListener('click', () => {
             type: mushroomType.type,
         };
         // > add the new mushroom to the mushrooms state
+        mushrooms.push(mushroom);
     }
 
     message = foundMessage[found];
@@ -93,6 +94,10 @@ function displayMushrooms() {
     mushroomContainer.innerHTML = '';
 
     // > loop the mushrooms
+    for (let mushroom of mushrooms) {
+        const mushEl = renderMushroom(mushroom);
+        mushroomContainer.append(mushEl);
+    }
     // create a mushroom element using the renderMushroom function
     // append it to the container
 }
